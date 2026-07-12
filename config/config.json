@@ -1,0 +1,13 @@
+{
+  "tfidf_max_features": 500,
+  "train_batch_size": 64,
+  "train_epochs": 100,
+  "retrain_pair_threshold": 500,
+  "confidence_pair_threshold": 100,
+  "ndcg_retrain_floor": 0.60,
+  "held_out_split_ratio": 0.20,
+  "bm25_k1": 1.5,
+  "bm25_b": 0.75,
+  "db_path": "db/propRank.sqlite3",
+  "random_seed": 42
+}
