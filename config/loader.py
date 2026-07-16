@@ -14,6 +14,7 @@ class Config:
         self.bm25_b = config_dict["bm25_b"]
         self.db_path = config_dict["db_path"]
         self.random_seed = config_dict["random_seed"]
+        self.learning_rate = config_dict.get("learning_rate", 0.001)
 
 _CONFIG = None
 
@@ -32,7 +33,7 @@ def load_config(config_path="config/config.json"):
         "tfidf_max_features", "train_batch_size", "train_epochs", 
         "retrain_pair_threshold", "confidence_pair_threshold", 
         "ndcg_retrain_floor", "held_out_split_ratio", "bm25_k1", 
-        "bm25_b", "db_path", "random_seed"
+        "bm25_b", "db_path", "random_seed", "learning_rate"
     ]
     
     for key in required_keys:
