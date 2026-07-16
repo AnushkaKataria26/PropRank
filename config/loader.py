@@ -15,6 +15,8 @@ class Config:
         self.db_path = config_dict["db_path"]
         self.random_seed = config_dict["random_seed"]
         self.learning_rate = config_dict.get("learning_rate", 0.001)
+        self.propensity_weight_clip = config_dict.get("propensity_weight_clip", 10.0)
+        self.propensity_normalize = config_dict.get("propensity_normalize", True)
 
 _CONFIG = None
 

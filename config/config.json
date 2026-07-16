@@ -10,5 +10,7 @@
   "bm25_b": 0.75,
   "db_path": "db/propRank.sqlite3",
   "random_seed": 42,
-  "learning_rate": 0.001
+  "learning_rate": 0.001,
+  "propensity_weight_clip": 10.0,
+  "propensity_normalize": true
 }
