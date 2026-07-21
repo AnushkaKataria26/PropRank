@@ -43,8 +43,8 @@ def simulate_preference_pairs(candidate_ranking, ground_truth_relevance, query_c
         item_i_id = candidate_ranking[idx_i]
         item_j_id = candidate_ranking[idx_j]
         
-        pos_i = idx_i + 1
-        pos_j = idx_j + 1
+        pos_i = int(idx_i) + 1
+        pos_j = int(idx_j) + 1
         
         rel_i = ground_truth_relevance[(item_i_id, query_context)]
         rel_j = ground_truth_relevance[(item_j_id, query_context)]

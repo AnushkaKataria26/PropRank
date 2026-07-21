@@ -12,5 +12,10 @@
   "random_seed": 42,
   "learning_rate": 0.001,
   "propensity_weight_clip": 10.0,
-  "propensity_normalize": true
+  "propensity_normalize": true,
+  "ndcg_at_10_target": 0.70,
+  "bm25_ndcg_at_10_max": 0.55,
+  "pairwise_accuracy_target": 0.70,
+  "inference_latency_ms_threshold": 500,
+  "max_user_contribution_ratio": 0.05
 }
